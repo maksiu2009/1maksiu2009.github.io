@@ -1,5 +1,5 @@
 body {
-    font-family: Arial;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     background-color: #f9f9f9;
     margin: 0;
     padding: 20px;
@@ -15,7 +15,7 @@ body {
 h1 {
     color: #333;
     text-align: left;
-    font-size: large;
+    font-size: 20px;
 }
 .day {
     margin-bottom: 20px;
@@ -25,46 +25,69 @@ h1 {
     color: #fff;
     padding: 10px;
     border-radius: 4px;
+    font-size: 14px;
     display: inline;
     display: flex;
 }
 .lesson {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
     border-bottom: 1px solid #ddd;
+    position: relative;
 }
 .lesson .time {
     width: 20%;
-    font-weight: bold;
+    font-size: 14px;
 }
 .lesson .details {
-    width: 60%;
+    width: 130%;
 }
 .lesson .room {
     width: 20%;
     text-align: right;
 }
-
-.przekreslona {
-    text-decoration: line-through;
-    opacity: 0.7; /* Opcjonalnie: zmniejszenie widoczności dla efektu "odwołanej" lekcji */
+.odwolana {
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 2px;
+    right: 958px;
 }
-
 .date {
     display: inline;
 }
-
 .poniedzialek {
     float: right;
     display: flex;
     justify-content: center;
-    margin-left: 58%;
+    margin-left: 85%;
 }
-
 .wtorek {
     float: right;
     display: flex;
     justify-content: center;
-    margin-left: 67%;
+    margin-left: 88%;
+}
+
+.sroda {
+    float: right;
+    display: flex;
+    justify-content: center;
+    margin-left: 88%
+}
+
+.czwartek {
+    float: right;
+    display: flex;
+    justify-content: center;
+    margin-left: 88%
+}
+
+.piatek {
+    float: right;
+    display: flex;
+    justify-content: center;
+    margin-left: 88%
 }
